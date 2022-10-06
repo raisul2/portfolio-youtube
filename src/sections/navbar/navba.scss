@@ -1,0 +1,44 @@
+@import '../../scss/sass-flexbox/scss/main.scss';
+
+
+.navbar{
+     width: 100%;
+    
+     @include row();
+      @include between();
+      @include middle();
+
+     .left{
+       h3{
+        font-size: 40px;
+        font-weight: 600;
+        cursor: pointer;
+        padding: 16px;
+        color: $white;
+       }
+     }
+
+       .right{
+       
+        @include flex(0, row, center, center, 16px);
+
+         ul{
+                
+            li{
+                list-style-type: none;
+                display: block;
+                padding: 16px;
+                text-transform: capitalize;
+                font-size: 18px;
+                font-weight: bolder;
+                color: $white;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+                &:hover{
+                     background-color: $white;
+                     color: $primary-1;
+                }
+            }
+         }
+       }
+}

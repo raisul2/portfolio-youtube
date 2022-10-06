@@ -1,0 +1,58 @@
+@import '../../scss/sass-flexbox/scss/main.scss';
+
+
+.mysckills{
+height: 60vh;   
+padding: 16px;
+      .text{
+margin-bottom: 32px;          
+          
+        h1{
+            color: $white;
+            font-weight: 600;
+            text-transform: capitalize;
+            text-align: center;
+            padding: 16px;
+        }
+
+ 
+      
+         
+    
+      }
+      .skill{
+          background-color: $primary-2;
+      padding: 24px;
+      }
+.box-grupes{
+     @include col-condition(12);
+     @include row();
+     @include middle();
+     @include between();
+
+
+}
+
+
+    }
+
+
+.skillsbox{
+      @include flex(16px, column, center ,center, 16px);
+    h1{
+        color: $white;
+        font-weight: 500;
+        text-transform: capitalize;
+        text-align: center;
+        padding: 16px;
+        text-align: center;
+
+    }
+
+    span{
+        color: $green;
+         font-weight: 400;
+         text-align: center;
+
+    }
+}

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import '../scss/sass-flexbox/scss/main.scss';
+body{
+    font-family: 'Poppins', sans-serif;
+   
+  }
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+} 
+
+body{
+
+    scroll-behavior: smooth;
+}
+
+.i{
+    font-size: calrem(24);
+}
+.container{
+    max-width: 96%;
+    margin: auto;
+    
+
+}
+
+
+
+  
+  /* Increase font sizes 1.5x on bigger screens */
+
+
+
+  @function calrem($pxvalue){
+    @return $pxvalue * 0.0625 + rem
+} 
+
+
+
+.padding {
+  padding-top: calrem(8*6);
+  padding-bottom: calrem(8*6);
+  
+}
+
+// .grid{
+//    @include  col-condition(12);
+//    @include row();
+//    display: grid;
+//    @include middle();
+//    @include center();
+// }
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.center{
+  display:  grid;
+  @include center();
+  @include middle();
+}
+
+
+.loading{
+  display: grid;
+  @include center();
+  @include middle();
+  height: 100vh;
+}

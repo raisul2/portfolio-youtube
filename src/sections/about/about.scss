@@ -1,0 +1,94 @@
+@import '../../scss/sass-flexbox/scss/main.scss';
+
+
+.about{
+height: 100vh;
+padding: 16px;
+@include flex(0, column, center, center,32px);
+
+
+
+.heading{
+  
+
+     h1{
+         color: $white;
+         font-weight: 600;
+         text-transform: capitalize;
+         text-align: center;
+         padding: 16px;
+     }
+
+     p{
+       color: $white;
+       text-transform: capitalize;
+       text-align: center;    
+       width: 80%;
+       padding: 16px;
+       margin: 0 auto;
+     }
+}
+
+
+.about-grupe{
+     @include row();
+     @include middle();
+     @include between();
+}
+
+}
+
+
+.aboutbox{
+    
+    padding: 24px;
+    @include flex(0, column, center, center,16px);
+    
+    .circle{
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: $primary-2;
+        @include flex(0, column, center, center,0);
+        
+      span{
+         display: block;
+         width: 20px;
+         height: 20px;
+         border-radius: 100%;
+         background-color: $green;
+      }
+    } 
+
+    .textbox{
+
+       
+        h4{
+         padding: 8px;
+         text-transform: capitalize;
+         text-align: center;
+         font-size: 20px;
+        }
+        
+
+        .name{
+            color: $white;
+            font-weight: bolder;
+
+        }
+
+        .realname{
+            color: $white;
+
+        }
+        
+
+        
+      
+
+
+    }
+     
+}
+
+

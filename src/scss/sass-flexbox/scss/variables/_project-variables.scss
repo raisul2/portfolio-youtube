@@ -1,0 +1,30 @@
+@import '../../scss/variables/responsive-breakpoints';
+$primary-1: #171717;
+$primary-2: #212121;
+$secoundary-1:#999999;
+$white: #FFFFFF;
+$white-2: #F4F4F4;
+$green:#27AE60;
+$green-2:#17763e;
+$main-padding: 24px;
+$black: black;
+$black-2: #4F4F4F;
+@include respond-below(sm){
+    $main-padding: 14px;
+};
+$radus:12px;
+$gap:32px;
+$elevation-3: 0px 2px 4px rgba(0, 0, 0, 0.14);
+$elevation-4: 0px 4px 3px rgba(0, 0, 0, 0.14);
+$elevation-12: 0px 12px 17px 2px rgba(0, 0, 0, 0.14);
+$elevation-5: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+
+
+// $primary-light: #3F51B5 ;
+// $primary-dark: #757DE8;
+// $secoundary-white: #212121;
+// $secoundary-white-dark: #CFD8DC;
+// $white:#000000;
+// $black-dark:#ffff;
+// $black-sami-dark:#ffff;
+// $black-light:#F6F6F6;

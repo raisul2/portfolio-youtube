@@ -1,0 +1,92 @@
+@import '../../scss/sass-flexbox/scss/main.scss';
+
+.contact{
+ padding: 10vh;
+      .text{
+margin-bottom: 32px;          
+        h1{
+            color: $white;
+            font-weight: 600;
+            text-transform: capitalize;
+            text-align: center;
+            padding: 16px;
+            
+        }
+
+
+
+      
+
+    }
+
+.wrapper{
+    @include flex(0, column, center ,center, 16px);
+   
+    
+.button{
+    button{
+        padding: 16px;
+        color: $white;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        text-transform: capitalize;
+
+        background-color: $green;
+        text-align: center;
+        border: none;
+        &:hover{
+             background-color: $green-2;
+
+        }
+    transition:  all .3s ease-in-out;
+    }
+}
+
+}
+    .input-grupe{
+        
+        @include col-condition(12);
+@include row();
+@include between();
+@include middle(); 
+width: 80%;
+
+        .inputbox{
+             @include col('md',5.5);
+            input{
+                width: 80%;
+                 padding: 24px;
+                 border: none;
+                 width: 100%;
+                 border-bottom: 2px solid $black-2;
+                 text-align: start;
+                 color: $black-2;
+                 padding-left: 0;
+                 background-color: transparent;
+                 outline: none;
+                 
+            }
+
+           
+        }
+
+    }
+
+}
+
+.text-area{
+    width: 80%;
+    textarea{
+        resize: none;
+        padding: 24px;
+        margin-top: 32px;
+        border: none;
+        width: 100%;
+        border: 2px solid $black-2;
+        text-align: start;
+        color: $black-2; 
+        background-color: transparent;
+         outline: none;
+    }
+}

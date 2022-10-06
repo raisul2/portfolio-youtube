@@ -1,0 +1,90 @@
+@import '../../scss/sass-flexbox/scss/main.scss';
+
+.whatido{
+padding: 16px;
+height: 60vh;
+
+      .text{
+margin-bottom: 32px;          
+        h1{
+            color: $white;
+            font-weight: 600;
+            text-transform: capitalize;
+            text-align: center;
+            padding: 16px;
+            
+        }
+
+
+
+      }
+
+}
+
+.box-grupe{
+margin-top: 16px;
+    @include col-condition(12);
+    
+@include row();
+@include between();
+@include middle();
+
+.whatidobox{
+     @include col('md',3.5);
+     .box{
+
+         background-color: $primary-2;
+        
+    @include flex(32px, column , start, center, 16px);
+     position: relative;
+   transition: all .3s ease-in-out;
+
+   cursor: pointer;
+   overflow: hidden;
+   &::after{
+    content: "";
+    height: 4px;
+    width: 100%;
+    background-color: $green;
+     position: absolute;
+     bottom: 0;
+     left: -100%;
+     transition: all .3s ease-in-out;
+
+ }
+      &:hover{
+       &::after{
+          content: "";
+          height: 4px;
+          width: 100%;
+          background-color: $green;
+           position: absolute;
+           bottom: 0;
+           left: 0;
+   transition: all .3s ease-in-out;
+
+
+       }
+      }
+
+    span{
+        
+    i{
+        font-size: 40px;
+        color: $green;
+    }
+
+    }
+
+    h2{
+        color: $black-2;
+        font-size: 40px;
+        line-height: auto;
+        text-transform: capitalize;
+    }
+    }
+      
+}
+
+}
+
